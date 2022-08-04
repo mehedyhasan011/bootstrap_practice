@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+
+<!-- layout start -->
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3 col-12">
+            <div class="box">1.1</div>
+          </div>
+          <div class="col-md-7 col-sm-6 col-7">
+            <div class="box">1.2</div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-5">
+            <div class="box">1.3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 design1">
+            <div class="row">
+              <div class="col-md-8 d-sm-block d-none">
+                <div class="box">2.1</div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">2.2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-md-block d-none">
+            <div class="box lime">3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-4 col-sm-9 design2">
+                <div class="box">4.1</div>
+              </div>
+              <div class="col-sm-3 d-md-none">
+                <div class="box lime">3</div>
+              </div>
+              <div class="col-md-8 col-sm-12 design2">
+                <div class="box">4.2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-md-block d-none">
+            <div class="box blue">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 d-md-none d-sm-block d-none">
+            <div class="box blue">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">6</div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- layout end -->
+
+<!-- signup start -->
+<div class="container">
+  <h1 class="text-center"><u>Sign Up</u></h1>
+</div>
+
+<form class="container">
+
+  <div class="mb-3">
+    <label for="f_name" class="form-label">First Name</label>
+    <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="First Name" required>
+    <div id="emailHelp" class="form-text">Enter first name correctly</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="l_name" class="form-label">Last Name</label>
+    <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Last Name">
+    <div id="emailHelp" class="form-text">Enter last name correctly</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control email" id="email" name="email" placeholder="Enter a valid email address" required>
+    <div id="emailHelp" class="form-text">Provide a valid Email</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="password1" class="form-label">Create new Password</label>
+    <input type="password1" class="form-control password1" id="password1" name="password1" placeholder="********" required>
+    <div id="emailHelp" class="form-text">Password must be strong and 8 character</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="password2" class="form-label">Confirm new Password</label>
+    <input type="password2" class="form-control password2" id="password2" name="password2" placeholder="********" required>
+    <div id="emailHelp" class="form-text">Password must be strong and 8 character</div>
+  </div>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input checkbox" id="checkbox">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+
+  <button type="reset" class="btn btn-danger">Reset</button>
+  <button type="submit" class="btn btn-primary">Submit</button> 
+<!-- signup end -->
+<!-- components start -->
+        <!-- accordion start -->
+<section class="faq">
+  <div class="container">
+    <h1 class="text-center"><u>Components</u></h1>
+    <h2>## Accordion</h2>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="accordion" id="faq_ex">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="h_1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Question 1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="h_1" data-bs-parent="#faq_ex" style="">
+          <div class="accordion-body">
+            <strong>Answer of question 1:</strong> This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="h_2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Question 2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="h_2" data-bs-parent="#faq_ex">
+          <div class="accordion-body">
+            <strong>Answer of question 2:</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="h_3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Question 3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="h_3" data-bs-parent="#faq_ex">
+          <div class="accordion-body">
+            <strong>Answer of question 3:</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+<!-- accordion end -->
+<!-- alert start -->
+<section class="alert">
+  <div class="container">
+    <h2>## Alert</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="alert alert-primary" role="alert">
+          A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-secondary" role="alert">
+          A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-success" role="alert">
+          A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+          A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-warning" role="alert">
+          A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-info" role="alert">
+          A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="alert alert-light alert-dismissible" role="alert">
+          A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-dark alert-dismissible" role="alert">
+          A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="alert alert-danger d-flex align-items-center alert-dismissible" role="alert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>      
+          <div>
+            An example alert with an icon
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+<!-- alert end -->
+<!-- badge start -->
+<section class="badge">
+  <div class="container">
+    <h2>## Badge</h2><br><br>
+        <button type="button" class="btn btn-primary">
+          Notifications <span class="badge text-bg-danger">99</span>
+        </button>
+        <br><br><br>
+        <button type="button" class="btn btn-primary position-relative">
+          Inbox
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+  </div>
+</section><br><br><br>
+<!-- badge end -->
+<!-- button start -->
+<section class="button">
+  <div class="container">
+    <h2>## Button</h2>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link mb-3">Link</button><br>
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark btn-lg">Dark</button>
+  </div>
+</section><br><br><br>
+<!-- button end -->
+<!-- breadcumb start -->
+<section class="button">
+  <div class="container">
+    <h2>## Breadcumb</h2>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+      </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li>
+      </ol>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+  </div>
+</section><br><br><br>
+<!-- breadcumb end -->
+<!-- carousel start -->
+<section class="button">
+  <div class="container">
+    <h2>## Carousel</h2>
+    <div class="row">
+      <div class="col-lg-6">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/bridge.jpg" class="d-block w-100" alt="bridge">
+    </div>
+    <div class="carousel-item">
+      <img src="images/flowers.jpg" class="d-block w-100" alt="flowers">
+    </div>
+    <div class="carousel-item">
+      <img src="images/sea-beach.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  </div>
+  </div>
+  </div>
+</section><br><br><br>
+<!-- carousel end -->
+<!-- collapse start -->
+<section class="button">
+  <div class="container">
+    <h2>## Collapse</h2><br>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Toggle width collapse</button>
+        </p>
+        <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body" style="width: 300px;">
+              This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br><br><br>
+<!-- collapse end -->
+<!-- dropdowns start -->
+<section class="button">
+  <div class="container">
+    <h2>## Dropdowns</h2><br>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle btn-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        My Profile Links
+      </a>
+
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://www.facebook.com/mehedyhasan011" target="blank">Facebook</a></li>
+        <li><a class="dropdown-item" href="https://www.instagram.com/mehedyhasan011" target="blank">Insta</a></li>
+        <li><a class="dropdown-item" href="https://twitter.com/mehedyhasan011" target="blank">Twitter</a></li>
+      </ul>
+    </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropup
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.facebook.com/mehedyhasan011" target="blank">Facebook</a></li>
+          <li><a class="dropdown-item" href="https://www.instagram.com/mehedyhasan011" target="blank">Insta</a></li>
+          <li><a class="dropdown-item" href="https://twitter.com/mehedyhasan011" target="blank">Twitter</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>  
+  </div>
+</section><br><br><br><br><br>
+<!-- dropdowns end -->
+<!-- modal start -->
+<section class="button">
+  <div class="container">
+    <h2>## Modal</h2>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"     aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+        Hello. Please agree our terms and conditions first.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br><br><br>
+<!-- modal end -->
+<!-- Navbar start -->
+<section class="button">
+  <div class="container">
+    <h2>## Navbar</h2>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.facebook.com/mehedyhasan011" target="blank">Facebook</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/mehedyhasan011" target="blank">Insta</a></li>
+            <li><a class="dropdown-item" href="https://twitter.com/mehedyhasan011" target="blank">Twitter</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-danger" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav><br><br>
+  </div>
+</section><br><br><br>
+<!-- Navbar end -->
+<!-- offcanvas start -->
+<section class="button">
+  <div class="container">
+    <h2>## Off-Canvas</h2>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://www.facebook.com/mehedyhasan011" target="blank">Facebook</a></li>
+        <li><a class="dropdown-item" href="https://www.instagram.com/mehedyhasan011" target="blank">Insta</a></li>
+        <li><a class="dropdown-item" href="https://twitter.com/mehedyhasan011" target="blank">Twitter</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  </div>
+</section><br><br><br>
+<!-- offcanvas end -->
+<!-- pagination start -->
+<section class="button">
+  <div class="container">
+    <h2>## Pagination</h2><br>
+    <div class="row">
+  <div class="col-4">
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h4 id="list-item-1">Item 1</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga, libero nostrum laborum modi numquam maiores consequuntur officia, eius corrupti.</p>
+      <h4 id="list-item-2">Item 2</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Tempora, amet deleniti quo enim accusantium quia sint ipsum fugiat necessitatibus? Nisi.</p>
+      <h4 id="list-item-3">Item 3</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti amet natus temporibus, tempora error quas animi impedit corrupti. Amet, ab.</p>
+      <h4 id="list-item-4">Item 4</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptas iure nostrum iste aut quae, maiores dolor asperiores repellendus cumque.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</section><br><br><br>
+<!-- scrollspy end -->
+<!-- progress start -->
+<section class="button">
+  <div class="container">
+    <h2>## Progress</h2>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+    </div><br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-label="Success striped example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+    </div><br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Info striped example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+   </div><br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+    </div><br>
+    <div class="progress">
+    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+    </div>
+    </div>
+</section><br><br><br>
+<!-- progress end -->
+
+
+
+<!-- components end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
